@@ -21,3 +21,7 @@ ENTRYPOINT ["java", "-jar", "docker-spring-boot.jar"]
 #  the 1st 8085 is the exposed port at the machine, the 2nd 8085 is the exposed port at the container
 #  If the application is rebuild, you need to rebuild the image (you can stop the container at command line
 #  by CTRL+C). then run again the initial build command
+
+#commandos
+#	docker build -f Dockerfile -t docker-spring-boot .		[builds an image as specified in this file: openjdk:8]
+#	docker run -p 8085:8085 docker-spring-boot		[run on port 8085 the specified image]
